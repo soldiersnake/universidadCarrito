@@ -31,7 +31,6 @@ function agregarCurso(e){
     }
 };
 
-// Eliminar curso
 function eliminarCurso(e){
     if(e.target.classList.contains('borrar-curso')){
         const cursoId = e.target.getAttribute('data-id');
@@ -99,7 +98,7 @@ function carritoHTML(){
 
     sincronizarStorage();
 };
-
+//localStorage
 function sincronizarStorage(){
     localStorage.setItem('carrito', JSON.stringify(articulosCarrito));
 };
